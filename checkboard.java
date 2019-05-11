@@ -27,7 +27,7 @@ public class checkboard {
 			else
 			{
 				frame.add(blackbtn);
-				frame.add(blackbtn);
+				frame.add(whitebtn);
 			}
 				
 			}	
