@@ -19,7 +19,7 @@ public class checkboard {
 			JButton blackbtn = new JButton();
 			whitebtn.setBackground(white);
 			blackbtn.setBackground(black);
-			if(i % 2 == 0)
+			if(row % 2 == 0)
 			{
 				frame.add(whitebtn);
 				frame.add(blackbtn);
