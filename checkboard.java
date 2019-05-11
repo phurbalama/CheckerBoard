@@ -9,29 +9,29 @@ public class checkboard {
 		Color white = Color.WHITE;
 		Color black = Color.BLACK;
 		frame.setSize(600,600);
-		JButton whitebtn = new JButton();
-		JButton blackbtn = new JButton();
-		whitebtn.setBackground(white);
-		blackbtn.setBackground(black);
 		
-		for(int i = 0;i< 32;i++)
+		for(int row = 0;i< 8;i++)
 		{
-			if(i<8) {
+			
+			for(int column = 0;i<8;i++)
+			{
+			JButton whitebtn = new JButton();
+			JButton blackbtn = new JButton();
+			whitebtn.setBackground(white);
+			blackbtn.setBackground(black);
+			if(i % 2 == 0)
+			{
 				frame.add(whitebtn);
 				frame.add(blackbtn);
 			}
-			else if(i<16) {
+			else
+			{
 				frame.add(blackbtn);
 				frame.add(blackbtn);
 			}
-			else if(i<24) {
-				frame.add(whitebtn);
-				frame.add(blackbtn);
-			}
-			else if(i<32) {
-				frame.add(blackbtn);
-				frame.add(blackbtn);
-			}
+				
+			}	
+			
 		}
 		GridLayout grid = new GridLayout(8,8);
 		frame.setLayout(grid);
